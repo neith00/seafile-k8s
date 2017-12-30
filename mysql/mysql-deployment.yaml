@@ -36,7 +36,7 @@ spec:
               name: seafile-secrets
         - name: MYSQL_DATABASE
           value: seafile
-        image: quay.io/neith00/mysql-docker@sha256:57afbcc633ead05c662b335d2643d5f97ec04d056ac31d7f89643bb36a2e5aa5 
+        image: quay.io/neith00/mysql-docker@sha256:4cbb499347edd4265bf53ceda6a3bbda28bc84391d7ab768f52bc44d5c8c25f9 
         imagePullPolicy: IfNotPresent
         name: mysql
         volumeMounts:
