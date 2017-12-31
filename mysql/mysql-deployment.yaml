@@ -19,6 +19,7 @@ spec:
     metadata:
       labels:
         run: mysql
+        project: seafile
     spec:
       containers:
       - env:
@@ -39,6 +40,9 @@ spec:
         image: quay.io/neith00/mysql-docker@sha256:4cbb499347edd4265bf53ceda6a3bbda28bc84391d7ab768f52bc44d5c8c25f9 
         imagePullPolicy: IfNotPresent
         name: mysql
+        ports:
+         - name: mysql
+           containerPort: 3306
         volumeMounts:
         - mountPath: /var/lib/mysql
           name: mysql-seafile
